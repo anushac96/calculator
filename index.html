@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="calculator_box"> <!--id calculator-->
+        <input id="screen_box" type="text" readonly > <!--id display-->
+        <div class="allKeys"> <!--id button_container -->
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation=''
+            "
+            >C</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=1
+            "
+            >1</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=2
+            "
+            >2</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation=equation +`+`
+            "
+            >+</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=3
+            "
+            >3</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=4
+            "
+            >4</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation +`-`
+            "
+            >-</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=5
+            "
+            >5</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=6
+            "
+            >6</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation +`*`
+            "
+            >*</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=7
+            "
+            >7</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=8
+            "
+            >8</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation +`/`
+            "
+            >/</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=eval(equation)
+            "
+            >=</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=9
+            "
+            >9</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation+=0
+            "
+            >0</button>
+            <button class="keys"
+            onclick="
+                document.querySelector('#screen_box').value=equation=equation+'.'
+            "
+            >.</button>
+        </div>
+    </div>
+
+    <script>
+        let equation = ""
+        document.querySelector('#screen_box').value=equation
+    </script>
+</body>
+</html>
